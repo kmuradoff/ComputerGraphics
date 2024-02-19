@@ -1,4 +1,4 @@
-package Lab1;
+package lab1;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -11,7 +11,7 @@ public class Grayscale {
         File f = null;
 
         try {
-            f = new File("C:/Users/kmuradoff/Pictures/Komp Grafika/lab1.jpg");
+            f = new File("src/lab1/input/lab1.jpg");
             img = ImageIO.read(f);
         } catch (IOException e) {
             System.out.println(e);
@@ -38,7 +38,7 @@ public class Grayscale {
         img.setRGB(0, 0, width, height, pixels, 0, width);
         try {
             f = new File(
-                    "C:/Users/kmuradoff/Pictures/Komp Grafika/lab1_grayscaled.jpg");
+                    "src/lab1/output/lab1_grayscaled.jpg");
             ImageIO.write(img, "jpg", f);
         } catch (IOException e) {
             System.out.println(e);

@@ -1,4 +1,4 @@
-package Lab1;
+package lab1;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -35,7 +35,7 @@ public class Binarize {
         File f = null;
 
         try {
-            f = new File("C:/Users/kmuradoff/Pictures/Komp Grafika/lab1.jpg");
+            f = new File("src/lab1/input/lab1.jpg");
             img = ImageIO.read(f);
         } catch (IOException e) {
             System.out.println(e);
@@ -46,7 +46,7 @@ public class Binarize {
 
         try {
             f = new File(
-                    "C:/Users/kmuradoff/Pictures/Komp Grafika/lab1_binarized.jpg");
+                    "src/lab1/output/lab1_binarized.jpg");
             ImageIO.write(img, "jpg", f);
         } catch (IOException e) {
             System.out.println(e);

@@ -1,4 +1,4 @@
-package Lab1;
+package lab1;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -45,8 +45,8 @@ class IncreaseBrightness {
     }
 
     public static void main(String[] args) throws Exception {
-        String inputPath = "C:/Users/kmuradoff/Pictures/Komp Grafika/lab1.jpg";
-        String outputPath = "C:/Users/kmuradoff/Pictures/Komp Grafika/lab1_brightness.jpg";
+        String inputPath = "src/lab1/input/lab1.jpg";
+        String outputPath = "src/lab1/output/lab1_brightness.jpg";
 
         AdjustBrightness(inputPath, outputPath);
     }
