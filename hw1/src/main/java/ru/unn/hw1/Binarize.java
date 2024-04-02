@@ -1,4 +1,4 @@
-package lab1;
+package ru.unn.hw1;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -35,7 +35,9 @@ public class Binarize {
         File f = null;
 
         try {
-            f = new File("src/lab1/input/lab1.jpg");
+            //get current path and system.out.println it
+            String file = new File("").getAbsolutePath();
+            f = new File("hw1/src/main/resources/input/lab1.jpg");
             img = ImageIO.read(f);
         } catch (IOException e) {
             System.out.println(e);
@@ -46,7 +48,7 @@ public class Binarize {
 
         try {
             f = new File(
-                    "src/lab1/output/lab1_binarized.jpg");
+                    "hw1/src/main/resources/output/lab1_binarized.jpg");
             ImageIO.write(img, "jpg", f);
         } catch (IOException e) {
             System.out.println(e);

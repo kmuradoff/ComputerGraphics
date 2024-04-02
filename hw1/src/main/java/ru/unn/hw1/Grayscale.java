@@ -1,4 +1,4 @@
-package lab1;
+package ru.unn.hw1;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -11,7 +11,7 @@ public class Grayscale {
         File f = null;
 
         try {
-            f = new File("src/lab1/input/lab1.jpg");
+            f = new File("hw1/src/main/resources/input/lab1.jpg");
             img = ImageIO.read(f);
         } catch (IOException e) {
             System.out.println(e);
@@ -38,7 +38,7 @@ public class Grayscale {
         img.setRGB(0, 0, width, height, pixels, 0, width);
         try {
             f = new File(
-                    "src/lab1/output/lab1_grayscaled.jpg");
+                    "hw1/src/main/resources/output/lab1_grayscaled.jpg");
             ImageIO.write(img, "jpg", f);
         } catch (IOException e) {
             System.out.println(e);
