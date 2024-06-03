@@ -29,3 +29,5 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/hw1/.gradle/
+/lab1/target/
