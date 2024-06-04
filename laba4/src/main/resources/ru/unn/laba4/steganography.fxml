@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.unn.laba4.SteganographyController">
+  <top>
+    <ToolBar>
+      <Button text="Load Image" onAction="#loadImage"/>
+      <Button text="Encode Text" onAction="#encodeText"/>
+      <Button text="Decode Text" onAction="#decodeText"/>
+    </ToolBar>
+  </top>
+  <center>
+    <ImageView fx:id="imageView"/>
+  </center>
+  <bottom>
+    <HBox>
+      <Label text="Text to encode:"/>
+      <TextField fx:id="textField" HBox.hgrow="ALWAYS"/>
+    </HBox>
+  </bottom>
+</BorderPane>
